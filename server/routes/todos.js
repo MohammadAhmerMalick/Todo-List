@@ -1,7 +1,8 @@
 const router = require('express').Router()
+const todoController = require('../controllers/todoController')
 
-router.get('/', (req, res) => {
-  res.send('ahmer')
-})
+router.post('/', (req, res) => todoController.addToDoItem(req, res))
+
+router.get('/', (req, res) => todoController.getToDoList(req, res))
 
 module.exports = router
