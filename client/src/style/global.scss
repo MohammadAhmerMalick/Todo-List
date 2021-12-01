@@ -1,0 +1,19 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $primaryDark;
+  outline: 1px solid red;
+}
+@import "./component//header";
+
+main {
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+  height: $mainHeight;
+}
+
+@import "./component/navigationPanel";
+@import "./component/mainPanel";
+@import "./component/detailPanel";
