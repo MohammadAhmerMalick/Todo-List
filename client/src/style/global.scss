@@ -4,13 +4,15 @@
   margin: 0;
   padding: 0;
   color: $primaryDark;
-  outline: 1px solid red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  // outline: 1px solid red;
 }
 @import "./component//header";
 
 main {
   display: grid;
-  grid-template-columns: 300px auto 300px;
+  grid-template-columns: 200px auto 200px;
   height: $mainHeight;
 }
 

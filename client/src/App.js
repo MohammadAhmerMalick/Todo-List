@@ -1,4 +1,5 @@
 import Header from "./component/Header";
+import MainPanel from "./component/MainPanel";
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
         <aside id="navigation-panel">
 
         </aside>
-        <section id="main-panel">
-
-        </section>
+        <MainPanel />
         <aside id="detail-panel">
 
         </aside>

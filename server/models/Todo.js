@@ -8,12 +8,19 @@ const TodoSchema = mongoose.Schema({
   detail: {
     type: String,
   },
+  starred: {
+    type: Boolean,
+    default: false
+  },
   createdOn: {
     type: Date,
   },
   lastUpdated: {
     type: Date,
     default: Date.now
+  },
+  targetDate: {
+    type: Date,
   }
 })
 
